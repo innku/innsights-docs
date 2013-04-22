@@ -32,6 +32,7 @@ Request
 ```
     curl -H "Content-Type:application/json" -H "Accept:application/json" http://tweetest.innsights.me/production/api/report.json?env=production&timeframe=week&ago=0&by=day&of=Mention&scope%5Bevent%5D%5Bname%5D=Mention
 ```
+
 Response
 ---------
 ``` json  
