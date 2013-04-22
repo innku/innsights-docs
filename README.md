@@ -1,16 +1,16 @@
-Innsights API
+##Innsights API
 ==============
 
-##Overview
+Overview
 ----------
-##Authentication
-----------------
+Authentication
+--------------
 You authenticate to the Innsights API by providing a given authenticity token. Each app will be given a different token but each token will remain the same among the distinct app environments.
 
 The authenticity token can be found in the **App Configuration** section.
 
 ![Authenticity Token](screenshots/auth_innsights.png)  
-##API Services
+API Services
 --------------
 * [<code>GET</code> *Timeline*](https://github.com/innku/innsights-docs/master/services/timeline.md)
 

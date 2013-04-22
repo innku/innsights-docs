@@ -1,12 +1,12 @@
-Timeline
-========
+##Timeline
+==========
 
-##Description
--------------
+Description
+-----------
 Returns a timeline for the number of registered events or metrics represented by a listing of points. Each point represents a time interval for a specific event.
 
-##Parameters
--------------
+Parameters
+-----------
 *  `scope` — 
 
 *  `timeframe` — Period of time.
@@ -26,13 +26,14 @@ Returns a timeline for the number of registered events or metrics represented by
 
 *  `authenticity_token` — Given token for your app. It can be found in **App Configuration** section.
 
-##Request
--------------
+Request
+-------
 *  `GET /report.json`
-    http://tweetest.innsights.me/production/api/report.json?**env**=production&**timeframe**=week&**ago**=0&by=day&of=Mention&**scope**%5Bevent%5D%5Bname%5D=Mention
-
-##Response
--------------
+```
+    curl -H "Content-Type:application/json" -H "Accept:application/json" http://tweetest.innsights.me/production/api/report.json?env=production&timeframe=week&ago=0&by=day&of=Mention&scope%5Bevent%5D%5Bname%5D=Mention
+```
+Response
+---------
 ``` json  
 {  
   "name":"This Week",
