@@ -1,5 +1,4 @@
-Timeline
-========
+##Timeline
 
 Description
 -----------
@@ -7,32 +6,40 @@ Returns a timeline for the number of registered events or metrics represented by
 
 Parameters
 -----------
-*  `scope` — 
+*  `scope` — Fraction of information based on some criteria. You can fraction your information by `event` or by `metric`. Aditional you can delimitate it by `user` or by `resource`.
+    - _Possible values_ :
+	`scope['event']['name'] = "My event"` \*  
+	`scope['metric']['name'] = "My metric"` \*  
+	`scope['user']['id'] = "User_id"`  
+	`scope['resources']['MyResourceName']['id'] = "MyResource_id"`  
+	\* ***Note*** : You must specify at least one of these scopes (either by event or by metric).
 
 *  `timeframe` — Period of time.
     - _Possible Values_ : week, month, year or history.
-    - _Default_ : week.
+    - _Default_ : week.  
 
 *  `ago` — Timeframe offset to be represented. 
     - _Possible Values_ : 0, 1, 2 ... n
-    - _Default_ : 0
+    - _Default_ : 0  
 
 *  `by` — Time interval for each point.
     - _Possible Values_ : day, week, month or year
-    - _Default_ : day
+    - _Default_ : day.  
 
 *  `env` — App environment.
-    - _Possible Values_ : development, staging or production.
+    - _Possible Values_ : development, staging or production.  
 
 *  `authenticity_token` — Given token for your app. It can be found in **App Configuration** section.
 
+***NOTE*** : `env` doesn't have a default value.
+
 Request
 -------
-*  `GET /report.json`
+*  `GET /timeline.json`
 
 ```
 curl -H "Content-Type:application/json" -H "Accept:application/json"
-"http://tweetest.innsights.me/production/api/report.json?env=production&timeframe=week&ago=0&by=day&of=Mention&scope%5Bevent%5D%5Bname%5D=Mention"
+"http://api.innsights.me/production/api/timeline.json?authenticity_token=12345&env=production&timeframe=week&ago=0&by=day&scope%5Bevent%5D%5Bname%5D=MyEvent"
 ```
 
 Response
@@ -40,7 +47,7 @@ Response
 ``` json  
 {  
   "name":"This Week",
-  "title":"Mention",
+  "title":"MyEvent",
   "start":1365984000,
   "finish":1366329599,
   "total":0,

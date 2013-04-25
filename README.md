@@ -1,8 +1,17 @@
 ##Innsights API
-==============
+
+***
 
 Overview
-----------
+---------
+
+Innsights is the service that gives you the power to answer:  
+
+* What are your users doing?  
+* Which ones are behaving the way you want?  
+* How can you replicate this behavior?  
+
+Innsights answers these questions by giving you an easy way to track the features in your application, the users getting involved with those features and the characteristics of those users.
 
 Authentication
 --------------
@@ -20,12 +29,12 @@ API Services
 
 *  [<code>GET</code> *Group*](https://github.com/innku/innsights-docs/blob/master/services/group.md)
 
-*  [<code>GET</code> *Event*](https://github.com/innku/innsights-docs/blob/master/services/event.md)
+*  [<code>POST</code> *Event*](https://github.com/innku/innsights-docs/blob/master/services/event.md)
 
 *  [<code>GET</code> *Scoreboard*](https://github.com/innku/innsights-docs/blob/master/services/scoreboard.md)
-    -  [*Users*](https://github.com/innku/innsights-docs/master/services/scoreboard.md)
+    -  [*Users*](https://github.com/innku/innsights-docs/blob/master/services/scoreboard.md)
 
-    -  [*Resources*](https://github.com/innku/innsights-docs/master/services/scoreboard.md)
+    -  [*Resources*](https://github.com/innku/innsights-docs/blob/master/services/scoreboard.md)
 
 Get involved
 ------------
