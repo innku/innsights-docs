@@ -39,7 +39,7 @@ Request
 
 ```
 curl -H "Content-Type:application/json" -H "Accept:application/json"
-"http://api.innsights.me/production/api/timeline.json?authenticity_token=12345&env=production&timeframe=week&ago=0&by=day&scope%5Bevent%5D%5Bname%5D=MyEvent"
+"http://api.innsights.me/timeline.json?authenticity_token=12345&env=production&timeframe=week&ago=0&by=day&scope%5Bevent%5D%5Bname%5D=MyEvent"
 ```
 
 Response
