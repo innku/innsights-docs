@@ -2,7 +2,7 @@
 
 Description
 -----------
-Return a listing of points representing a group of actions. Each point represent the number of occurrences of a specific action in a time period.
+Returns a listing of points representing a group of actions. Each point represent the number of occurrences of a specific action in a time period.
 
 Parameters
 -----------
@@ -33,11 +33,11 @@ Parameters
 
 *  `of` — Actions to group.
     - _Possible Values_ :
-	`of[] = "My Action1"`
-	`of[] = "My Action2"`
-		.
-		.
-		.
+	`of[] = "My Action1"`  
+	`of[] = "My Action2"`  
+		.  
+		.  
+		.  
 	`of[] = "My ActionN"`
  
 
@@ -57,28 +57,28 @@ Response
 ``` json  
 {  
   {
-     name: "March 18 - March 24",
-     start: 1363564800,
-     finish: 1364169599,
-     total: 309,
-     average: 44,
-     active_users: 79,
-     average_per_user: 3,
-     points: 
+     "name": "March 18 - March 24",
+     "start": 1363564800,
+     "finish": 1364169599,
+     "total": 309,
+     "average": 44,
+     "active_users": 79,
+     "average_per_user": 3,
+     "points": 
        [
 	{
-	  name: "myaction1",
-	  display: "My Action 1",
-	  description: "",
-	  points: 57,
-	  rank: 1
+	  "name": "myaction1",
+	  "display": "My Action 1",
+	  "description": "",
+	  "points": 57,
+	  "rank": 1
 	},
 	{
-	  name: "myaction2",
-	  display: "My Action 2",
-	  description: "",
-	  points: 24,
-	  rank: 2
+	  "name": "myaction2",
+	  "display": "My Action 2",
+	  "description": "",
+	  "points": 24,
+	  "rank": 2
 	}
       ]
   }
