@@ -7,7 +7,7 @@ Returns a timeline for the number of registered events or metrics represented by
 Parameters
 -----------
 *  `scope` — Fraction of information based on some criteria. You can fraction your information by `event` or by `metric`. Aditional you can delimitate it by `user` or by `resource`.
-    - _Possible values_ :
+    - _Possible values_ :  
 	`scope['event']['name'] = "My event"` \*  
 	`scope['metric']['name'] = "My metric"` \*  
 	`scope['user']['id'] = "User_id"`  

@@ -7,7 +7,7 @@ Returns a listing of ranked scores accomplished by a group of users or resources
 Parameters
 -----------
 *  `scope` — Fraction of information based on some criteria. You can fraction your information by `event` or by `metric`. Aditional you can delimitate it by `user` or by `resource`.
-    - _Possible values_ :
+    - _Possible values_ :  
 	`scope['event']['name'] = "My event"` \*  
 	`scope['metric']['name'] = "My metric"` \*  
 	\* ***Note*** : You must specify at least one of these scopes (either by event or by metric).

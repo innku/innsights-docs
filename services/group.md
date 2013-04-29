@@ -6,8 +6,8 @@ Returns a listing of points representing a group of actions. Each point represen
 
 Parameters
 -----------
-*  `scope` — Fraction of information based on some criteria. You can fraction your information by `event` or by `metric`. Aditional you can delimitate it by `user` or by `resource`.
-    - _Possible values_ : 
+*  `scope` — Fraction of information based on some criteria. You can fraction your information by `user` or by `resource`.
+    - _Possible values_ :  
 	`scope['user']['id'] = "User_id"`  
 	`scope['resources']['MyResourceName']['id'] = "MyResource_id"`  
 
