@@ -47,7 +47,21 @@ curl -H "Content-Type:application/json" -H "Accept:application/json"
 Response
 ---------
 ``` json  
-{  
-  "name": "my_action"
+{
+  "name": "my_action",
+  "user": 
+   {
+     "id": 1,
+     "display": "Username",
+     "email": "user@mail.com"
+   },
+  "resources": 
+   {
+     "company": 
+      {
+       "id": 10,
+       "display": "MyCompany"
+      }
+   }
 }
 ```

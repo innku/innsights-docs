@@ -32,9 +32,7 @@ API Services
 *  [<code>POST</code> *Event*](https://github.com/innku/innsights-docs/blob/master/services/event.md)
 
 *  [<code>GET</code> *Scoreboard*](https://github.com/innku/innsights-docs/blob/master/services/scoreboard.md)
-    -  [*Users*](https://github.com/innku/innsights-docs/blob/master/services/scoreboard.md)
 
-    -  [*Resources*](https://github.com/innku/innsights-docs/blob/master/services/scoreboard.md)
 
 Get involved
 ------------

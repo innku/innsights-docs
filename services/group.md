@@ -7,12 +7,9 @@ Returns a listing of points representing a group of actions. Each point represen
 Parameters
 -----------
 *  `scope` — Fraction of information based on some criteria. You can fraction your information by `event` or by `metric`. Aditional you can delimitate it by `user` or by `resource`.
-    - _Possible values_ :
-	`scope['event']['name'] = "My event"` \*  
-	`scope['metric']['name'] = "My metric"` \*  
+    - _Possible values_ : 
 	`scope['user']['id'] = "User_id"`  
 	`scope['resources']['MyResourceName']['id'] = "MyResource_id"`  
-	\* ***Note*** : You must specify at least one of these scopes (either by event or by metric).
 
 *  `timeframe` — Period of time.
     - _Possible Values_ : week, month, year or history.
@@ -54,6 +51,7 @@ curl -H "Content-Type:application/json" -H "Accept:application/json"
 
 Response
 ---------
+
 ``` json  
 {  
   {
